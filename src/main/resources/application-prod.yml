@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  data:
+    redis:
+      host: ${REDIS_HOST}
+      port: ${REDIS_PORT}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+
+auth:
+  cookie:
+    secure: true
+
+  token:
+    access-token:
+      secret: ${ACCESS_TOKEN_SECRET}
+      access-token-ttl: ${ACCESS_TOKEN_TTL}
+
+    refresh-token:
+      refresh-token-ttl: ${REFRESH_TOKEN_TTL}

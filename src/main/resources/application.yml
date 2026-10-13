@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: playground
+
+  jpa:
+    open-in-view: false
