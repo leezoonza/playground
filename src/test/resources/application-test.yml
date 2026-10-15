@@ -3,6 +3,19 @@ spring:
     hibernate:
       ddl-auto: create-drop
 
+  # 테스트용 SMTP 서버(GreenMail)로 발송한다. 값은 TestMailServer와 맞춰야 한다.
+  mail:
+    host: localhost
+    port: 3025
+    username: test@example.com
+    password: test-password
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: false
+            required: false
+
 auth:
   cookie:
     secure: false
