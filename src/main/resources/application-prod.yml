@@ -10,6 +10,10 @@ spring:
       host: ${REDIS_HOST}
       port: ${REDIS_PORT}
 
+  mail:
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
+
   jpa:
     hibernate:
       ddl-auto: validate
